@@ -50,9 +50,6 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [srinivas-vullamgunta](https://github.com/srinivas-vullamgunta)
-- [All Contributors](../../contributors)
+- [srinivas-vullamgunta](https://github.com/srinivas-vullamgunta) 
 
-## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
