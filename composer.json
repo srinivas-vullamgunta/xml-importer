@@ -1,0 +1,65 @@
+{
+  "name": "srinivas-vullamgunta/xml-importer",
+  "description": "",
+  "keywords": [
+    "XML",
+    "reader",
+    "xml",
+    "laravel"
+  ],
+  "homepage": "https://github.com/srinivas-vullamgunta/xml-importer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "srinivas-vullamgunta",
+      "email": "support@srinivas-vullamgunta.nl",
+      "homepage": "https://srinivas-vullamgunta.nl/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": ">=8.47",
+    "ext-dom": "*",
+    "ext-simplexml": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.15",
+    "phpunit/phpunit": "^9.3",
+    "spatie/phpunit-snapshot-assertions": "^4.0",
+    "vimeo/psalm": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "srinivas-vullamgunta\\XML\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "srinivas-vullamgunta\\XML\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "psalm": "vendor/bin/psalm",
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "srinivas-vullamgunta\\XML\\XMLServiceProvider"
+      ],
+      "aliases": {
+        "XML": "srinivas-vullamgunta\\XML\\XMLFacade"
+      }
+    }
+  },
+  "suggest": {
+    "illuminate/view": "Required to use the load view feature.",
+    "laravel/laravel": "Required to use the load view feature."
+  }
+}
